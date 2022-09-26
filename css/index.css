@@ -1,0 +1,262 @@
+/* Source Sans Pro */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+/* Reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--black);
+}
+
+/* Colours */
+:root {
+  --primary-dark: #1a237e;
+  --primary-base: #3f51b5;
+  --primary-light: #c5cae9;
+  --primary-ultra: #e8eaf6;
+  --white: #ffffff;
+  --black: #292929;
+  --shadow: box-shadow: 8px -2px 14px -1px rgba(26,35,126,0.18);
+}
+/* Highlight Color */
+::-moz-selection {
+  background-color: var(--primary-base);
+  color: var(--primary-ultra);
+}
+
+::selection {
+  background-color: var(--primary-base);
+  color: var(--white);
+}
+/* Base Styles */
+a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+}
+ul,
+ol {
+  list-style: none;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.btn {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: var(--primary-base);
+  border-radius: 10px;
+}
+/* Header */
+header {
+  background-color: var(--primary-dark);
+  padding: 1rem;
+  position: sticky;
+}
+header a {
+  color: var(--white);
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li a:hover {
+  color: var(--primary-light);
+}
+.active {
+  font-weight: 700;
+}
+/* Hero Section */
+.hero {
+  background-color: var(--primary-light);
+  padding: 8vw;
+}
+
+.hero-txt h1 {
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+.hero-txt p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+  max-width: 750px;
+}
+/* Posts */
+.posts {
+  padding: 4vw;
+  background: var(--primary-ultra);
+}
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.post h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.post p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--white);
+  padding: 2vw;
+}
+
+.footer-content  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+   margin-bottom: 1rem;
+}
+.left p {
+    font-size: 1.2rem;
+}
+.right ul li  {
+    padding: 5px;
+}
+
+/* Post Template */
+.content {
+    padding: 8vw;
+}
+.post-title {
+    font-size: 4rem;
+    text-align: center;
+}
+.author {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+.author span { 
+  color: var(--primary-base);
+}
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1.2rem;
+}
+.blockquote {
+  background-color: var(--primary-base);
+  padding: 4vw;
+  text-align: center;
+  margin: 1.5rem;
+  border-radius: 8px;
+}
+.blockquote p {
+  color: var(--primary-ultra);
+  font-size: 2.2rem;
+  font-style: italic;
+}
+.thumbnail {
+  margin: 1rem;
+}
+.email {
+  padding: 8vw;
+  background-color: var(--primary-ultra);
+  box-shadow: var(--shadow);
+  margin: 1.5rem;
+}
+.email h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.email p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+form {
+  text-align: center;
+}
+.field {
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  margin: 0.5rem;
+  height: 50%;
+  width: 200px;
+  font-size: 1.1rem;
+}
+/* Author Profile */
+.info {
+ display: flex;
+ margin: 1.5rem;
+}
+.info-right h1 {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 1.9rem;
+  color: var(--primary-dark);
+}
+.info-right p {
+  text-align: center; 
+  font-size: 1.1rem;
+  color: var(--primary-base);
+}
+.body {
+  background-color: var(--primary-light);
+  height: 100vh;
+}
+.success-title {
+  text-align: center;
+  font-size: 3.9rem;
+  margin: 1.5rem;
+}
+.success-btn {
+  justify-content: center;
+}
